@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start:server": "nodemon src/index.js",
-    "build": "react-scripts build",
-  },  
+    "build": "react-scripts build"
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
