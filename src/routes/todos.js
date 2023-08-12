@@ -21,7 +21,7 @@ router.post("/add", async (req, res) => {
 
 router.get("/get", async (req, res) => {
   const { token } = req.headers;
-  const { id } = jwt.decode(token);
+  const { id } = jwt.decode(token) || { id: null };
   const todos = await ToDoModel.find({ userId: id }).select(
     "_id title createdOn priority completed"
   );
